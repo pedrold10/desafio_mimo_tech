@@ -1,0 +1,49 @@
+service: vuttr-api
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action: dynamodb:*
+          Resource: "arn:aws:dynamodb:us-east-1:*:table/tools"
+
+
+functions:
+  listTools:
+    handler: handler.listTools
+    events:
+      - http:
+          path: tools
+          method: get
+
+  getTool:
+    handler: handler.getTool
+    events:
+      - http:
+          path: tools/{id}
+          method: get
+
+  createTool:
+    handler: handler.createTool
+    events:
+      - http:
+          path: tools
+          method: post
+
+  updateTool:
+    handler: handler.updateTool
+    events:
+      - http:
+          path: tools/{id}
+          method: put
+
+  deleteTool:
+    handler: handler.deleteTool
+    events:
+      - http:
+          path: tools/{id}
+          method: delete
