@@ -48,7 +48,6 @@
 - **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools
 
 **Corpo da Solicitação:**
-
 ``` json
 {
   "nome": "Nova Ferramenta",
@@ -71,8 +70,8 @@
 ### Atualizar Ferramenta por ID
 - **Endpoint:** PUT /tools/{id}
 - **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
-- **Corpo da Solicitação:**
 
+**Corpo da Solicitação:**
 ```json
 {
   "nome": "Ferramenta Atualizada",
