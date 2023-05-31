@@ -29,8 +29,8 @@
 
 
 ### Obter Ferramenta por ID
-**Endpoint:** GET /tools/{id}
-**URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
+- **Endpoint:** GET /tools/{id}
+- **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
 
 **Resposta:**
 ```json
@@ -44,8 +44,8 @@
 ```
 
 ### Criar Ferramenta
-**Endpoint:** POST /tools
-**URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools
+- **Endpoint:** POST /tools
+- **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools
 
 **Corpo da Solicitação:**
 
@@ -69,9 +69,9 @@
 ```
 
 ### Atualizar Ferramenta por ID
-**Endpoint:** PUT /tools/{id}
-**URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
-**Corpo da Solicitação:**
+- **Endpoint:** PUT /tools/{id}
+- **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
+- **Corpo da Solicitação:**
 
 ```json
 {
@@ -97,10 +97,11 @@
 ```
 
 ### Excluir Ferramenta por ID
-**Endpoint:** DELETE /tools/{id}
-**URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
-**Resposta:**
+- **Endpoint:** DELETE /tools/{id}
 
+- **URL:** https://986mq6hd05.execute-api.us-east-1.amazonaws.com/dev/tools/{id}
+
+**Resposta:**
 ```json
 {
   "message": "Ferramenta deletada com sucesso"
